@@ -1,11 +1,16 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace StringReversion
+namespace FibonacciFinder
 {
     class Program
     {
         static void Main(string[] args)
         {
+
             Console.WriteLine("Syftet med applikationen är att läsa in en sträng och därefter skriva ut den baklänges.");
             Console.Write("Ange strängen som ska skrivas ut baklänges: ");
 
