@@ -11,13 +11,12 @@ namespace FibonacciFinder
         static void Main(string[] args)
         {
 
-            Console.WriteLine("Syftet med applikationen är att läsa in en sträng och därefter skriva ut den baklänges.");
-            Console.Write("Ange strängen som ska skrivas ut baklänges: ");
+            Console.WriteLine("Syftet med applikationen är att räkna ut ett tal i Fibonacci-serien med rekursion.");
+            Console.Write("Ange vilket tal i serien som ska beräknas: ");
 
-            var stringToBeInverted = Console.ReadLine();
-            var stringInverted = StringReverter.Revert(stringToBeInverted);
+            var numberInSequence = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine(String.Format("Strängen baklänges: {0}", stringInverted));
+            Console.WriteLine(String.Format("Tal #{0} i Fibonacci-serien har värdet {1}.", numberInSequence, Fibonacci.GetValueForNumber( numberInSequence)));            
             Console.ReadLine();
         }
     }

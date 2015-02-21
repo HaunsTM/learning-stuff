@@ -11,9 +11,9 @@
             de tv&aring; f&ouml;rsta talen &auml;r 0 och 1. Matematiskt inneb&auml;r det att Fibonaccitalen &auml;r en sekvens F<sub>n</sub>, definierad rekursivt enligt:<br />
             
             <ul>
-                <li>F<sub>0</sub>=0</li>
-                <li>F<sub>1</sub>=1</li>
-                <li>Om talet &auml;r delbart med b&aring;de 3 och 5 skall programmet skriva ut "FizzBuzz".</li>
+                <li>F<sub>0</sub> = 0</li>
+                <li>F<sub>1</sub> = 1</li>
+                <li>F<sub>n</sub >= F<sub>n-1</sub> + F<sub>n-2</sub></li>
             </ul>
         </p>
     </article>

@@ -8,12 +8,17 @@ namespace FibonacciFinder
 {
     public class Fibonacci
     {
-        private const int startValue1 = 1;
-        private const int startValue2 = 1;
 
-        public int GetValueForNumber(int numberInSequence)
+        public static int GetValueForNumber(int n)
         {
-            
+            if (n == 0)
+                return 0;
+            else if (n == 1)
+                return 1;
+            else
+                return (GetValueForNumber(n - 1) + GetValueForNumber(n - 2));
         }
+
+        
     }
 }
