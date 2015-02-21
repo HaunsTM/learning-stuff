@@ -33,7 +33,7 @@
         <h2>String reversion</h2>
         <h3>Uppgift</h3>
         <p>
-            Ta en sträng och skriv ut den baklänges.
+            Ta en str&auml;ng och skriv ut den bakl&auml;nges.
         </p>
     </article>
 </div>
