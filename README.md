@@ -13,6 +13,13 @@
             </ul>            
         </p>
     </article>
+    <article id="stringReversion">
+        <h2>String reversion</h2>
+        <h3>Uppgift</h3>
+        <p>
+            Ta en sträng och skriv ut den baklänges.
+        </p>
+    </article>
 
 
 </div>
