@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A1B845DD-3E0E-450D-B50B-88A74DB96841}"
 	ProjectSection(SolutionItems) = preProject
@@ -13,6 +13,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringReversion", "StringReversion\StringReversion.csproj", "{B1F7851E-E8A1-421D-ADFB-3A7EF8525C66}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FibonacciFinder", "FibonacciFinder\FibonacciFinder.csproj", "{8D127D8F-B317-4560-91DF-F21EF5ACC3AB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WCFHostingWithWindowsService", "WCFHostingWithWindowsService", "{371D5FDE-1382-4DAE-B45A-A46F8493EFAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFCalcLib", "WCFHostingWithWindowsService\WCFCalcLib\WCFCalcLib.csproj", "{C0A1D77F-0AB7-4E2F-97A9-B692204539F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalcClient", "WCFHostingWithWindowsService\CalcClient\CalcClient.csproj", "{37E1EA3A-D920-48A9-BAFB-DB5FADEB8849}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinSVCHostedCalcService", "WCFHostingWithWindowsService\WinSVCHostedCalcService\WinSVCHostedCalcService.csproj", "{C47769A1-0C6A-47D6-92D1-6EBFE3DC802D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,8 +40,25 @@ Global
 		{8D127D8F-B317-4560-91DF-F21EF5ACC3AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D127D8F-B317-4560-91DF-F21EF5ACC3AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D127D8F-B317-4560-91DF-F21EF5ACC3AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0A1D77F-0AB7-4E2F-97A9-B692204539F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0A1D77F-0AB7-4E2F-97A9-B692204539F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0A1D77F-0AB7-4E2F-97A9-B692204539F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0A1D77F-0AB7-4E2F-97A9-B692204539F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37E1EA3A-D920-48A9-BAFB-DB5FADEB8849}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37E1EA3A-D920-48A9-BAFB-DB5FADEB8849}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37E1EA3A-D920-48A9-BAFB-DB5FADEB8849}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37E1EA3A-D920-48A9-BAFB-DB5FADEB8849}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C47769A1-0C6A-47D6-92D1-6EBFE3DC802D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C47769A1-0C6A-47D6-92D1-6EBFE3DC802D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C47769A1-0C6A-47D6-92D1-6EBFE3DC802D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C47769A1-0C6A-47D6-92D1-6EBFE3DC802D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C0A1D77F-0AB7-4E2F-97A9-B692204539F9} = {371D5FDE-1382-4DAE-B45A-A46F8493EFAB}
+		{37E1EA3A-D920-48A9-BAFB-DB5FADEB8849} = {371D5FDE-1382-4DAE-B45A-A46F8493EFAB}
+		{C47769A1-0C6A-47D6-92D1-6EBFE3DC802D} = {371D5FDE-1382-4DAE-B45A-A46F8493EFAB}
 	EndGlobalSection
 EndGlobal

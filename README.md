@@ -36,4 +36,36 @@
             Ta en str&auml;ng och skriv ut den bakl&auml;nges.
         </p>
     </article>
+    <article id="wCFHostingWithWindowsService">
+        <h2>WCF med en windows service + enkel console-klient</h2>
+        <h3>Uppgift</h3>
+        <p>
+            Skapa en WCF-service och hosta den i en windows service.
+        </p>
+        <p>Projektet är implementation av en artikel på <a href="http://www.codeproject.com/Articles/653493/WCF-Hosting-with-Windows-Service">Code Project</a> 
+där det demonstreras en enkel WCF-sevice. Servicen består av en enkel kalkylator med de fyra valiga räknesätten:
+<pre>[ServiceContract]
+  public interface ICalcService
+  {
+      [OperationContract]
+      double Add(double dblNum1, double dblNum2);
+      [OperationContract]
+      double Subtract(double dblNum1, double dblNum2);
+      [OperationContract]
+      double Multiply(double dblNum1, double dblNum2);
+      [OperationContract]
+      double Divide(double dblNum1, double dblNum2);
+  }</pre>
+
+        Vidare byggs en installer till projektet:
+        <ol>
+            <li>Öppna MyCalcWinService i <b>design mode</b> genom att högerklicka på filen. Högerklicka sedan på designytan och välj <b>Add Installer</b> från
+context-menyn:
+<img src="https://i.imgur.com/pcvBOZo.png"></img></li>
+            <li></li>
+            <li></li>
+        </ol>
+        </p>
+
+    </article>
 </div>
