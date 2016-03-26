@@ -37,7 +37,7 @@
         </p>
     </article>
     <article id="wCFHostingWithWindowsService">
-        <h2>WCF med en windows service + enkel console-klient</h2>
+        <h2>WCF med en windows service + enkel konsollklient</h2>
         <h3>Uppgift</h3>
         <p>
             Skapa en WCF-service och hosta den i en windows service.
@@ -57,15 +57,33 @@ där det demonstreras en enkel WCF-sevice. Servicen består av en enkel kalkylator
       double Divide(double dblNum1, double dblNum2);
   }</pre>
 
-        Vidare byggs en installer till projektet:
-        <ol>
-            <li>Öppna MyCalcWinService i <b>design mode</b> genom att högerklicka på filen. Högerklicka sedan på designytan och välj <b>Add Installer</b> från
-context-menyn:
-<img src="https://i.imgur.com/pcvBOZo.png"></img></li>
-            <li></li>
-            <li></li>
-        </ol>
+            Vidare byggs en installer till projektet:
+            <ol>
+                <li>Öppna MyCalcWinService i <b>design mode</b> genom att högerklicka på filen. Högerklicka sedan på designytan och välj
+                    <b>Add Installer</b> från context-menyn: <img src="https://i.imgur.com/pcvBOZo.png"></img> 
+                </li>
+                <li>Efter att <i>installern</i> har lagts till så skapas en fil <b>ProjectInstaller.cs</b> som här tilldelas ett namnbyte <b>CalcServiceInstaller.cs</b>.</li>
+            </ol>
+            För att installera projektet:
+            <ol>
+                <li>Öppna en Visual Studio Command prompt (<b>Start > All Apps (Windows 10) -> Microsoft Visual Studio (XXXX) > Visual Studio Tools > Visual Studio Command Prompt</b>)</li>
+                <li>Navigera till mappen där <code>WinSvcHostedCalcService.exe</code> har byggts.</li>
+                <li>Vid kommandoprompten: <code>InstallUtil WinSvcHostedCalcService.exe</code></li>
+            </ol>
+            För att starta servicen:
+            <ol>
+                <li>Öppna en Visual Studio Command prompt (<b>Start > All Apps (Windows 10) -> Microsoft Visual Studio (XXXX) > Visual Studio Tools > Visual Studio Command Prompt</b>)</li>
+                <li>Vid kommandoprompten: <code>sc start WinSvcHostedCalcService</code></li>
+            </ol>
+            <ol>
+                <li>Öppna en Visual Studio Command prompt (<b>Start > All Apps (Windows 10) -> Microsoft Visual Studio (XXXX) > Visual Studio Tools > Visual Studio Command Prompt</b>)</li>
+                <li>Navigera till mappen där <code>WinSvcHostedCalcService.exe</code> har byggts.</li>
+                <li>Vid kommandoprompten: <code>sc start WinSvcHostedCalcService</code></li>
+            </ol>
         </p>
+        <h3>Klientapplikationen</h3>
+        <p>När servicen är byggd och deployad är det dags att skapa klienten. För att göra det enkelt har den ursprungliga artikelförfattaren  
+           valt en lösning med en konsollbaserad klient som tilldeltas namnet <code>CalcClient</code>.</p>
 
     </article>
 </div>
