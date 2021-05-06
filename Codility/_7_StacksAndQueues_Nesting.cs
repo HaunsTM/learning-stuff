@@ -9,7 +9,9 @@ namespace Codility
         {
             var isValid = false;
 
-            if (nestCharacterStart == '(' && nestCharacterEnd == ')')
+            if (
+                (nestCharacterStart == '(' && nestCharacterEnd == ')') | 
+                (nestCharacterStart == '[' && nestCharacterEnd == ']'))
             {
                 isValid = true;
             }
@@ -29,12 +31,12 @@ namespace Codility
 
             foreach (var character in characterArray)
             {
-                if (character == '(') 
+                if ((character == '(') | (character == '[')) 
                 {
                     // we have found an opening parenthese, put it on the character stack
                     charStack.Push(character);
                 } 
-                else if (character == ')')//need to check for 
+                else if ((character == ')') | (character == ']'))//need to check for 
                 {
                     // if we do not have any character on the stack when we are here, it's impossible that the parentheses are properly corresponding
                     if (charStack.Count == 0) 
